@@ -8,6 +8,7 @@ import string
 
 def check_palindrome(word):
     """Check if a word is a palindrome."""
+    word = word.upper()
     reverse = word[::-1]
     return reverse == word
 
