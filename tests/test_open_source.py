@@ -8,9 +8,11 @@ from open_source import open_source
 
 
 def test_palindrome():
-    open_source
-    assert True
-
+    assert open_source.check_palindrome("oso") == True
+    assert open_source.check_palindrome("Oso") == True
+    assert open_source.check_palindrome("()()") == False
+    assert open_source.check_palindrome(")(()") == True
+    assert open_source.check_palindrome("Hola") == False
 
 def test_random_int():
     open_source
